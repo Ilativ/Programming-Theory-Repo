@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
     public GameObject[] preyPrefabs;
     public GameObject[] predatorPrefabs;
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene(1);
+    }
 
     public void SpawnPrey()
     {
