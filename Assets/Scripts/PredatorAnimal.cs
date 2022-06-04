@@ -16,7 +16,7 @@ public class PredatorAnimal : Animal
         //Chasing prey
         if (m_target != null)
         {
-            if (Vector3.Distance(transform.position, m_target.transform.position) < 4.0f)
+            if (Vector3.Distance(transform.position, m_target.transform.position) < 2.0f)
             {
                 Destroy(m_target);
                 m_target = null;
